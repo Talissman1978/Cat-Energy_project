@@ -1,0 +1,125 @@
+.nutrition {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  background-image: url(../../img/index-can-mobile\ 1.png),
+                    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+                   url(../../img/index-background-mobile.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 280px 270px, 320px 302px, 320px 302px;
+  background-position-x: 20px, center, center;
+  background-position-y: 168px, 0, 0;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+}
+
+.nutrition__title {
+  padding: 0;
+  margin: 0;
+  font-family: "oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 28px;
+  box-sizing: border-box;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 117px;
+    margin-top: 45px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+    padding-left: 190px;
+    margin-top: 125px;
+    box-sizing: border-box;
+  }
+}
+
+.nutrition__slogan {
+  padding: 0;
+  margin: 0;
+  font-family: "oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 41px;
+    padding-left: 117px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+    padding-left: 190px;
+    padding-top: 40px;
+    box-sizing: border-box;
+  }
+}
+
+.nutrition__link {
+  text-decoration: none;
+  background-color: #68B738;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin-top: 302px;
+  box-sizing: border-box;
+    &:hover {
+      background-color: #5EAA2F;
+    }
+    &:active {
+      opacity: 30%;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+      margin: 0;
+      width: 244px;
+      height: 54px;
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 112px;
+      margin-top: 50px;
+      padding-top: 17px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+      margin-top: 50px;
+      margin-left: 190px;
+      box-sizing: border-box;
+    }
+}

@@ -1,0 +1,105 @@
+.page-header {
+  min-width: 320px;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    height: 908px;
+      background-image:
+                 url(../../img/index-can-tablet\ 1.png);
+      background-repeat: no-repeat;
+      background-position-x: 30px;
+      background-position-y: 340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: 696px;
+    padding: 0;
+    margin: 0 auto;
+    background-image: url(../../img/index-can-desk.png),
+              linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+              url(../../img/index-background-desktop\ 1.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 552px 499px, 720px 694px, 720px 694px;
+    background-position-x: 63%, 100%, 100%;
+    background-position-y: 140px, 0px, 0px;
+  }
+}
+
+.page-header__logo {
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 31px;
+  padding-left: 117px;
+  border-bottom: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 42px;
+    padding-left: 103px;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+    padding-top: 77px;
+    padding-left: 80px;
+    box-sizing: border-box;
+  }
+}
+
+.page-header__link {
+  padding: 0;
+  margin: 0;
+  &:hover[href] {
+    opacity: 70%;
+  }
+  &:active[href] {
+    opacity: 30%;
+  }
+  &::before {
+    content: url(../../img/logo-mobile.svg);
+    position: absolute;
+    top: 12px;
+    left: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before {
+      content: url(../../img/logotip-tablet-top.svg);
+      position: absolute;
+      top: 25px;
+      left: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: url(../../img/logo-desktop-top.svg);
+      position: absolute;
+      top: 52px;
+      left: 0;
+    }
+  }
+}
+
+
+
+.page-header__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
