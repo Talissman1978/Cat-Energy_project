@@ -1,0 +1,132 @@
+.dop-info {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+.dop-info__title {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  padding-top: 5px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 46px;
+    padding-bottom: 63px;
+  }
+}
+
+.dop-info__item {
+  padding: 0;
+  margin: 0;
+  font-family: "oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+    & input[type="checkbox"] {
+      margin-right: 24px;
+    }
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 220px;
+        & input[type="checkbox"] {
+          margin-right: 37px;
+        }
+        &:nth-child(2),
+        &:last-child {
+          margin-left: 125px;
+        }
+        &:first-child,
+        &:nth-child(2) {
+          margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 221px;
+      &:nth-child(2),
+      &:last-child {
+        margin-left: 0;
+      }
+      &:first-child,
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+    }
+}
+
+.dop-info__button {
+  background-color: #68B738;
+  border: none;
+  display: block;
+  width: 280px;
+  height: 40px;
+  font-family: "oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    height: 52px;
+    font-size: 20px;
+    margin-top: 32px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    margin-top: 43px;
+    margin-bottom: 80px;
+  }
+}
+
+.dop-info__text {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    position: absolute;
+    right: 200px;
+    top: 1825px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 1470px;
+    right: 850px;
+  }
+}
+
+.dop-info__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
