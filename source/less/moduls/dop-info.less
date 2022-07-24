@@ -16,12 +16,25 @@
   color: #000000;
   padding-top: 5px;
   padding-bottom: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(104, 183, 56, 1), rgba(104, 183, 56, 1));
+  background-repeat: no-repeat;
+  background-size: auto 2px;
+  background-position: 185px 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding-top: 46px;
     padding-bottom: 63px;
+    padding-left: 70px;
+    background-position: 320px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+     padding-left: 110px;
+     background-position: 360px 70px;
   }
 }
 
@@ -68,6 +81,7 @@
 }
 
 .dop-info__button {
+  margin: 0 auto;
   background-color: #68B738;
   border: none;
   display: block;
@@ -81,17 +95,20 @@
   margin-top: 15px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     width: 282px;
     height: 52px;
     font-size: 20px;
     margin-top: 32px;
     margin-bottom: 70px;
+    margin-left: 70px;
   }
 
   @media (min-width: @desktop-width) {
     width: 568px;
     margin-top: 43px;
     margin-bottom: 80px;
+    margin-left: 110px;
   }
 }
 
@@ -120,13 +137,52 @@
 }
 
 .dop-info__container {
+  padding: 0 20px;
   @media (min-width: @tablet-width) {
+    padding: 0 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0 110px;
     justify-content: space-between;
+  }
+}
+
+.check-input {
+  position: absolute;
+  appearance: none;
+}
+
+.check-box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: -45px;
+  background-image: url(../../img/border\ check.svg);
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-left: -58px;
+    background-image: url(../../img/border\ check-tablet.svg);
+  }
+}
+
+.dop-info__block {
+  padding-left: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 58px;
+  }
+}
+
+.check-input:checked + .check-box {
+  background-image: url(../../img/check-on.svg);
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/check-on-tablet.svg);
   }
 }

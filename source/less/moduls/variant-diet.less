@@ -47,3 +47,39 @@
       }
     }
 }
+
+.variant-diet__input {
+  position: absolute;
+  appearance: none;
+}
+
+.variant-diet__box {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-left: -45px;
+  background-image: url(../../img/radio-mobile-off.svg);
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-left: -60px;
+    background-image: url(../../img/radio-tablet-off.svg);
+  }
+}
+
+.variant-diet__check {
+  padding-left: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 53px;
+  }
+}
+
+.variant-diet__input:checked + .variant-diet__box {
+  background-image: url(../../img/radio-mobile-on.svg);
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/radio-tablet-on.svg);
+  }
+}
