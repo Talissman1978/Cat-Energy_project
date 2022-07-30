@@ -1,0 +1,214 @@
+.catalog-dop {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 86px;
+}
+}
+.catalog-dop__modul {
+  width: 896px;
+}
+
+.catalog-dop__title {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  padding-top: 17px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #CDCDCD;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 9px;
+    padding-left: 36px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(104, 183, 56, 1), rgba(104, 183, 56, 1));
+    background-repeat: no-repeat;
+    background-size: auto 2px;
+    background-position: 400px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 82px;
+  }
+}
+
+.catalog-dop__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #CDCDCD;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
+}
+
+.catalog-dop__item {
+  padding: 0;
+  margin: 0;
+  height: 128px;
+  border-bottom: 1px solid #CDCDCD;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    height: 139px;
+    padding: 0 38px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 72px;
+    padding: 0;
+    align-items: baseline;
+      &:first-child {
+        border-top: 1px solid #CDCDCD;
+      }
+  }
+}
+
+.catalog-dop__subtitle {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+  padding-top: 13px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 23px;
+    padding-bottom: 0;
+  }
+}
+
+.catalog-dop__info {
+  @media (min-width: @tablet-width) {
+    width: 225px;
+  }
+}
+
+.catalog-dop__name {
+  padding: 0;
+  margin: 0;
+  min-width: 140px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #444444;
+  padding-top: 10px;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 132px;
+    text-align: right;
+  }
+}
+
+.catalog-dop__meaning {
+  padding: 0;
+  margin: 0;
+  min-width: 140px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #444444;
+  padding-top: 10px;
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 90px;
+  }
+}
+
+.catalog-dop__button {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 280px;
+  height: 40px;
+  background-color: #68B738;
+  border: none;
+  font-family: "oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 15px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
+}
+
+.action {
+  width: 280px;
+  height: 289px;
+  padding: 0;
+  margin: 0;
+  margin-top: 43px;
+  margin-bottom: 30px;
+  background-image: url(../../img/catalog-action.png);
+  background-repeat: no-repeat;
+  background-size: 280px 289px;
+  background-position-x: center;
+  background-position-y: top;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    height: 200px;
+    margin-top: 69px;
+    margin-bottom: 72px;
+    background-image: url(../../img/action-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 708px 200px;
+    background-position: center top;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    background-image: url(../../img/action-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 245px 289px;
+  }
+}
